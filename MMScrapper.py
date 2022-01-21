@@ -17,7 +17,7 @@ content=bestiariusz.find_all('tbody', class_='')[0].find_all('tr')
 stworzenie=['0', '0' ,'0','0', '0' ,'0','0', '0' ,'0','0','0']
 stworzenia=[]
 
-for beast in range(0,2):
+for beast in range(0,2):    #Żeby zescrapować wszystko po prostu użyj w range len(content)
     for i in range(0,3):    #Źródła obrazków
         pic_src=content[beast].find_all('img')[i].attrs['src']
         stworzenie[i]=pic_src
